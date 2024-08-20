@@ -29,18 +29,27 @@
         -------------------Call Stack --------------------
 
 
+        Where things go wrong 
+
+                * NO base case
+                * Forgetting to return or returning the wrong thing
+                * stack overflow
+
+
+
 */
 
-// function countNumbers(num){
-//         if(num <=0 ){
-//                 return ;
-//         }
-//         console.log(num);
-//         num--;
-//         countNumbers(num);
-// }
+function sumRange(num){
+        // base case 
+        if(num <=0 ){
+                return 0;
+        }
 
-// countNumbers(5);
+        //recursive case; 
+        return num + sumRange(num- 1);
+}
+
+console.log(sumRange(3));
 
 
 // function getMyPosition(num){
@@ -81,6 +90,7 @@ function palindrome(str){
 }
 
 // console.log( palindrome('racecarw'));
+console.log( palindrome(121));
 
 
 // recursive function for converting decimal to binary
@@ -95,4 +105,4 @@ function decimalToBinary(num){
 
 }
 
-console.log( decimalToBinary(233));
+// console.log( decimalToBinary(233));

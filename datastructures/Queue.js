@@ -10,6 +10,19 @@
     uploading resources
     printing / task processing
 
+
+    Big O of Queues
+
+    Insertion - O(1)
+    Removal - O(1)
+    Searching - O(N)
+    Access - O(N)
+
+
+    Queue are FIFO data structure, all the elements are first in first out 
+    Queues are useful for processing tasks and are foundational for more complex data structures.
+    Insertion and removal can be done in O(1)
+
  */
 
 class Node{
